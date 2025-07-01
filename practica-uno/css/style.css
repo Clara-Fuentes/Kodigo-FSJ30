@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Savate:ital,wght@0,200..900;1,200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caprasimo&display=swap');
+
+/*--- BASE  --- 
+==================     */
+:root{
+    --primary-color:  #f56004;
+    --second-color:  #6e5647;
+}
+
+html{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: gray;
+    background-image: url("../assets/images/background-adare-restaurant.jpg");
+    background-size: cover;
+}
+
+.container{
+    margin-left: auto;
+    margin-right: auto;
+    width: 80vw;
+    text-align: center;
+}
+
+/*-------Header------ */
+.container .header{   /* Cuando usamos .container > header : le estamos diciendo que solo los hijos directos del container se va a modificar */
+    text-align: center;
+    height: 20vh;
+}
+
+/*-------Logo------ */
+.container .header .img-container{
+    height: 12vh;
+    display: flex;
+    justify-content: center;
+}
+
+.container .header .img-container img-logo{
+    height: 10vh;
+}
+
+/*-------Nav------ */
+.container .header .navbar{
+    /*display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;*/
+    display: flex;
+    justify-content: space-between;
+    width: 40vw;
+    margin: 0 auto; /* Para centrar un div*/
+}
+.container .header .navbar .nav-item{
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    padding: 0.5rem 1rem;
+}
+
+
+.container .header .navbar .nav-item:hover{
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+}
+
+/*-------Main------ */
+.container .main-container{
+    margin-top: 5vh;
+}
+
+.container .main-container .main-text{
+    color: white;
+    padding: 2rem;
+}
+
+.container .main-container .main-text h1{
+    /* font-family: "Savate", sans-serif; */
+    font-family: "Caprasimo", serif;
+    font-size: 3.5em;
+    transition: all 0.3s;
+}
+
+.container .main-container .main-text h1:hover{
+   text-shadow: 0.05em 0.05em rgb(230, 105, 27),              
+}  
+/*.container .main-container .main-text h1:hover{
+    color: rgb(230, 105, 27);
+    font-size: 4em;
+}*/
+
+.container .main-container .main-text article{
+    margin: 0 auto;
+    max-width: 40vw;
+}
+.container .main-container .main-text article p{
+    color: rgb(221, 215, 215);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    line-height: 1.1;    
+}
+.container .main-container .main-text article p strong a{
+   text-decoration: none;
+   color: white
+}
+.container .main-container .main-text article p strong a{
+    text-shadow: 0.05em 0.05em rgb(230, 105, 27),  
+}
+
+/* ================== 
+--- Main content MAPS  --- 
+==================     */
+.container .main-container .maps-container .maps{ 
+    height: 50vh;
+    width: 60vw;
+}
+
+/* --- Footer --- */
+
+.container .footer{
+    color: white;
+}
+
+.container .footer h4{
+    font-size: 1.1em;
+
+}
+

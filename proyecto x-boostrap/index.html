@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Proyecto X</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container">
+        <!-- Container-fluid agrega flex y tendríamos que editarlo, sin fluid se despega de las orillas -->
+        <a class="navbar-brand text-danger fw-bold" href="#">Erbianbi</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Explorar</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Iniciar Sesión</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Main content area -->
+  <main class="container mt-4">
+    <form class=" bg-with row shadow-sm rounded p-3"> <!--lg= large md= midle sm= small-->
+      <div class="col-lg-3 col-md-6 col-sm-12 mb-2">
+        <!-- col-3 indica que ocupa 3 de las 12 columnas del grid de bootstrap, col solo aplica para los div esto ayuda a que sea responsive: g-3 col-md-6 col-sm-12-->
+        <input class="form-control" type="text" placeholder="Destino" aria-label="default input example">
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-12 mb-2">
+        <input class="form-control" type="date" qsaaria-label="default input example">
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-12 mb-2">
+        <input class="form-control" type="date" aria-label="default input example">
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-12 mb-2">
+        <input class="form-control" type="text" placeholder="Huésped" aria-label="default input example">
+      </div>
+      <div class="text-end">
+        <!--Siempre que queramos mover un elemento debemos de agregar un contenedor y moder el contenedor-->
+        <button class="btn btn-danger">Buscar</button>
+      </div>
+    </form>
+  </main>
+  <!--Cards-->
+  <section class="container">
+    <article class="row mt-3 mb-4">
+      <!--car 1-->
+      <div class="col-lg-4 col-md-6 col-sm-12 mb-2">
+        <div class="card h-100">
+          <img src="./assets/cabaña-1.jpg" class="card-img-top" alt="cabaña-en-navidad">
+          <div class="card-body">
+            <h5 class="card-title">Cabaña en Navidad</h5>
+            <p class="card-text">$200 USD/ noche</p>
+            <p class="card-text"><small class="text-secondary">4.8 ★</small></p>
+            <a href="#" class="btn btn-primary">Alquilar</a>
+          </div>
+        </div>
+      </div>
+      <!--car 2-->
+      <div class="col-lg-4 col-md-6 col-sm-12 mb-2">
+        <div class="card h-100">
+          <img src="./assets/cabaña-2.jpg" class="card-img-top" alt="casa-de-verano">
+          <div class="card-body">
+            <h5 class="card-title">Casa de Verano</h5>
+            <p class="card-text">$200 USD/ noche</p>
+            <p class="card-text"><small class="text-secondary">4.8 ★</small></p>
+            <a href="#" class="btn btn-primary">Alquilar</a>
+          </div>
+        </div>
+      </div>
+      <!--car 3-->
+      <div class="col-lg-4 col-md-6 col-sm-12 mb-2">
+        <div class="card h-100">
+          <img src="./assets/cabaña-3.jpg" class="card-img-top" alt="casa-en-otoño">
+          <div class="card-body">
+            <h5 class="card-title">Casa en Otoño</h5>
+            <p class="card-text">$200 USD/ noche</p>
+            <p class="card-text"><small class="text-secondary">4.8 ★</small></p>
+            <a href="#" class="btn btn-primary">Alquilar</a>
+          </div>
+        </div>
+      </div>
+    </article>
+  </section>
+
+
+  <!-- Footer -->
+  <footer class="bg-light pt-4">
+    <div class="container">
+      <section class="row">
+        <article class="col-lg-4 col-md-4 col-sm-12 mb-2">
+          <h5>Asistencia</h5>
+          <ul class="list-unstyled"> <!-- ul>li*5>a -->
+            <li><a href="#">Centro de Ayuda</a></li>
+            <li><a href="#">Antidiscriminación</a></li>
+            <li><a href="#">Apoyo de discapacitados</a></li>
+            <li><a href="#">Opciones de cancelación</a></li>
+            <li><a href="#">Problemas en la zona</a></li>
+          </ul>
+        </article>
+        <article class="col-lg-4 col-md-4 col-sm-12 mb-2">
+          <h5>Compañía</h5>
+          <ul class="list-unstyled"> <!-- ul>li*5>a -->
+            <li><a href="#">Acerca de nosotros</a></li>
+            <li><a href="#">Prensa</a></li>
+            <li><a href="#">Empleo</a></li>
+            <li><a href="#">Inversiones</a></li>
+          </ul>
+        </article>
+        <article class="col-lg-4 col-md-4 col-sm-12 mb-2">
+          <h5>Legal</h5>
+          <ul class="list-unstyled"> <!-- ul>li*5>a -->
+            <li><a href="#">Privacidad</a></li>
+            <li><a href="#">Términos</a></li>
+            <li><a href="#">Mapa del sitio</a></li>
+          </ul>
+        </article>
+      </section>
+      <hr>
+      <section class="row">
+        <article class="text-center small pb-2">
+          <p>2025 © Erbianbi</p>
+          <p>
+            <a href="#">Español</a> |
+            <a href="#">USD</a> |
+            <a href="#"><i class="bi bi-facebook"></i></a> |
+            <a href="#"><i class="bi bi-instagram"></i></a> |
+            <a href="#"><i class="bi bi-twitter-x"></i></a>
+          </p>
+        </article>
+
+      </section>
+    </div>
+  </footer>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
