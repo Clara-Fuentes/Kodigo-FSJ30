@@ -1,0 +1,23 @@
+
+
+git push -u origin main --force
+
+Sincroniza el repositorio local con el remoto
+git pull
+
+*------------Branch------------------*
+Listar las ramas
+git branch
+
+Eliminar la rama
+git branc -d nombre-rama
+
+Cambiar de rama actual
+git checkout nombre-rama
+
+Crear nueva rama y cambiarnos a ella
+git checkout -b nueva-rama
+
+---Alternativa al checkout 
+Crear rama y cambiarnos a ella. 
+git switch -c nueva-rama
